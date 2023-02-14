@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #393053;
+}
+
+/* Nav */
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 30px 300px;
+    height: 50px;
+    background-color: #635985;
+    color: #F0E9D2;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+nav > a{
+    text-decoration: none;
+    color: #F0E9D2;
+}
+
+.reset {
+    width: 100px;
+    height: 40px;
+    border-radius: 15px;
+    border: 3px solid #18122B;
+    background-color: #635985;
+    cursor: pointer;
+}
+
+/* Body */
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 300px;
+}
+
+.computer-selection {
+    margin-top: 100px;
+}
+
+.player-options  {
+    display: flex;
+    flex-direction: row;
+    font-size: 100px;
+    border: 5px solid #18122B;
+    border-radius: 15px;
+    padding: 50px 50px;
+    margin: 0 30px;
+}
+
+.player-options > * {
+    margin: 0 70px;
+    cursor: pointer;
+}
+
+.choiceBtn {
+    width: 150px;
+    height: 150px;
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+}
+
+.choiceBtn:hover {
+    transition: all 300ms;
+    background-color: #18122B;
+}
+
+.scores {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.player-score {
+    display: flex;
+    flex-direction: column;
+}
+
+.results {
+    margin-top: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#game-result-text {
+    color: #18122B;
+    font-size: 48px;
+}
+
+/* Footer */
+footer {
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #18122B;
+    color: #F0E9D2;
+}
+

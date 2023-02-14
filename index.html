@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Rock paper scissors</h1>
+    </header>
+    <div class="hero">
+        <div class="player-options">
+            <button class="choiceBtn" value="rock">🪨</button>
+            <button class="choiceBtn" value="paper">📃</button>
+            <button class="choiceBtn" value="scissors">✂️</button>
+        </div>
+        <div class="scores">
+            <div class="player-score">
+                <h1 style="color: yellow">Player</h1>
+                <span id="player-selection-text"></span>
+            </div>
+            <div class="computer-score">
+                <h1 style="color: red">Computer</h1>
+                <span id="computer-selection-text"></span>
+            </div>
+        </div>
+        <div class="results">
+            <h1>Score</h1>
+            <span id="player-score-text">0</span>
+            <span id="computer-score-text">0</span>
+            <span id="round-result-text">No winner</span>
+            <span id="game-result-text"></span>
+        </div>
+    </div>
+    <footer>
+        Copyright © Uros Relic
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
