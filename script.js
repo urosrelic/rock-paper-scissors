@@ -12,9 +12,6 @@ computerSelectionText.style.color = "red";
 let options = ["rock", "paper", "scissors"];
 let player;
 let computer;
-let result;
-let roundWinner = '';
-
 let playerScore = 0;
 let computerScore = 0;
 const roundLimit = 5;
@@ -57,13 +54,13 @@ function playRound(btn) {
 
 choiceBtns.forEach(btn => btn.addEventListener("click", function () {
     playRound(btn);
-    if(playerScore === 5) {
+    if(playerScore === roundLimit) {
         playerScore = 0;
         computerScore = 0;
         gameResultText.textContent = "You won the game!";
     }
 
-    if(computerScore === 5) {
+    if(computerScore === roundLimit) {
         playerScore = 0;
         computerScore = 0;
         gameResultText.textContent = "You lost the game!";
