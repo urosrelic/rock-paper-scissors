@@ -37,8 +37,8 @@ function updateScore() {
     } else if(roundResultText.textContent === "You lose this round!") {
         computerScore++;
     }
-    playerScoreText.textContent = "" + playerScore;
-    computerScoreText.textContent = "" + computerScore;
+    playerScoreText.textContent = "Player score: " + playerScore;
+    computerScoreText.textContent = "Computer score: " + computerScore;
 }
 
 function playRound(btn) {
